@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+        --Paleblue: hsl(225, 100%, 98%);
+        --Brightblue: hsl(245, 75%, 52%);
+        --Very-pale-blue: hsl(225, 100%, 98%);
+        --Desaturated-blue: hsl(224, 23%, 55%);
+        --Dark-blue: hsl(223, 47%, 23%);
+    }
+    * {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    body {
+      background-image: url(/images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+    }
+    main {
+      margin: 1.5rem auto 1.5rem auto;
+      height: auto;
+      width: 425px;
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: hsl(360, 100%, 100%);
+      /* offset-x | offset-y | blur-radius | spread-radius | color */
+      box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.25);
+    }
+    figure {
+      width: 100%;
+      height: auto;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .heading {
+      padding: 1rem;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 900;
+    }
+    .description {
+      text-align: center;
+      width: 75%;
+      margin: 0rem auto 0.5rem ;
+      font-size: 16px;
+      color: var(--Desaturated-blue);
+      font-weight: 500;
+    }
+    .feature {
+      width: 85%;
+      margin: 1rem auto;
+      padding: 0.5rem;
+      display: flex;
+      background-color: var(--Paleblue);
+    }
+    .left {
+      width: 50%;
+      padding: 0.6rem;
+      flex-basis: 50%;
+    }
+    .left img {
+      width: 48px;
+      height: 48px;
+      float: left;
+    }
+    strong {
+      vertical-align: top;
+      font-weight: 900;
+      margin-left: 1rem;
+    }
+    dd {
+      margin-left: 1rem;
+      text-align: end;
+    }
+    .right {
+      flex-basis: auto;
+      text-align: end;
+      height: 100%;
+      align-self: center;
+      margin-left: 6rem;
+    }
+    .change {
+      text-align: end;
+      text-decoration: underline;
+      font-weight: 700;
+      color: var(--Brightblue);
+      cursor: pointer;
+      width: auto;
+    }
+    .change:active { color: var(--Desaturated-blue); }
+    .btn {
+      width: 85%;
+      height: 2.5rem;
+      margin: 1rem 2rem;
+      border: none;
+      background-color: var(--Brightblue);
+      color: hsl(360, 100%, 100%);
+      cursor: pointer;
+      border-radius: 10px;
+      font-weight: 700;
+      /* offset-x | offset-y | blur-radius | spread-radius | color */
+      box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.25);
+    }
+    .btn:active {
+      background-color: var(--Desaturated-blue);
+    }
+    .last {
+      text-align: center;
+      margin: 0.5rem auto 2rem auto;
+    }
+    .cancle {
+      text-align: center;
+      display: inline;
+      width: auto;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 0;
+      color: var(--Brightblue);
+    }
+    .cancle:active { color: var(--Desaturated-blue);}
+    @media screen and (max-width: 425px) {
+      main {
+        margin: 0;
+      }
+      figure {
+        height: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <figure>
+      <img src="/images/illustration-hero.svg" alt="illustration-hero-image">
+    </figure>
+    <section class="heading">
+      <h1>Order Summary</h1>
+    </section>
+    <p class="description">
+      You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!
+    </p>
+    <section class="feature">
+      <div class="left">
+        <img src="/images/icon-music.svg" alt="A circule music icon">
+        <strong>Annual Plan</strong>
+        <dd>$59.99/year</dd>
+      </div>
+      <div class="right">
+        <p class="change">change</p>
+      </div>
+    </section>
+    <input type="button" value="Proceed to Payment" class="btn">
+    <section class="last">
+      <p class="cancle">
+        Cancel Order
+      </p>
+    </section>
+  </main>
+
+  <!---Order Summary
+
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+
+  Annual Plan
+  $59.99/year
+
+  Change
+
+  Proceed to Payment
+  Cancel Order
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>--->
+</body>
+</html>
